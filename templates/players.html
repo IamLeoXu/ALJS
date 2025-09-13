@@ -1,0 +1,26 @@
+<!-- templates/players.html (参赛选手页面，类似events.html) -->
+<!DOCTYPE html>
+<html lang="zh">
+<!-- 头部和样式同上 -->
+<body>
+    <!-- 导航 -->
+    <div class="container my-5">
+        <h1>参赛选手记录</h1>
+        <div class="row">
+            {% for player in players %}
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ player.name }}</h5>
+                        <p class="card-text">队伍: {{ player.team }}</p>
+                        <p class="card-text">角色: {{ player.role }}</p>
+                        <p class="card-text">{{ player.bio }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!-- JS -->
+</body>
+</html>

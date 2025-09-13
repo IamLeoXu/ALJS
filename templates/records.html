@@ -1,0 +1,26 @@
+<!-- templates/records.html (战绩记录页面，类似) -->
+<!DOCTYPE html>
+<html lang="zh">
+<!-- 头部 -->
+<body>
+    <!-- 导航 -->
+    <div class="container my-5">
+        <h1>战绩记录</h1>
+        <div class="row">
+            {% for record in records %}
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ record.match }}</h5>
+                        <p class="card-text">赛事: {{ record.event }}</p>
+                        <p class="card-text">比分: {{ record.score }}</p>
+                        <p class="card-text">{{ record.details }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!-- JS -->
+</body>
+</html>

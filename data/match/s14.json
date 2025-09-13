@@ -1,0 +1,52 @@
+{
+    "teams": [
+        {
+            "team_id": "TeamA",
+            "rank": 1,
+            "total_score": 20,
+            "total_kills": 8,
+            "rank_score": 12,
+            "players": [
+                {"player_id": "PlayerX1", "kills": 3, "damage": 1200},
+                {"player_id": "PlayerX2", "kills": 2, "damage": 800},
+                {"player_id": "PlayerX3", "kills": 3, "damage": 1000}
+            ]
+        },
+        {
+            "team_id": "TeamB",
+            "rank": 2,
+            "total_score": 15,
+            "total_kills": 6,
+            "rank_score": 9,
+            "players": [
+                {"player_id": "PlayerY1", "kills": 2, "damage": 900, "assists": 9},
+                {"player_id": "PlayerY2", "kills": 1, "damage": 600},
+                {"player_id": "PlayerY3", "kills": 3, "damage": 1100}
+            ]
+        },
+        {
+            "team_id": "TeamSB",
+            "rank": 14,
+            "total_score": 15,
+            "total_kills": 6,
+            "rank_score": 9,
+            "players": [
+                {"player_id": "PlayerY1", "kills": 2, "damage": 900},
+                {"player_id": "PlayerY2", "kills": 1, "damage": 600},
+                {"player_id": "PlayerY3", "kills": 3, "damage": 1100}
+            ]
+        },
+        {
+            "team_id": "TeamC",
+            "rank": 3,
+            "total_score": 7,
+            "total_kills": 5,
+            "rank_score": 2,
+            "players": [
+                {"player_id": "PlayerZ1", "kills": 2, "damage": 700},
+                {"player_id": "PlayerZ2", "kills": 2, "damage": 650},
+                {"player_id": "PlayerZ3", "kills": 1, "damage": 500}
+            ]
+        }
+    ]
+}
