@@ -1,6 +1,7 @@
 from flask import Flask, render_template, jsonify
 import json
 import os
+import re
 
 app = Flask(__name__)
 
@@ -14,6 +15,16 @@ def load_json(file_path):
         with open(file_path, 'r', encoding='utf-8') as f:
             return json.load(f)
     return {}
+
+def get_max_season(data_dir="/data/match"):
+    max_season = 0
+    for fname in os.listdir(data_dir):
+        match = re.match(r"s(\d+)\.json$", fname)
+        if match:
+            season = int(match.group(1))
+            if season > max_season:
+                max_season = season
+    return max_season
 
 # 主页路由
 @app.route('/')
@@ -43,7 +54,8 @@ def records():
 def match(season_id):
     match_data = load_json(os.path.join(MATCH_DIR, f'{season_id}.json'))
     match_data['match_id'] = season_id.upper()  # 确保 match_id 为 S1 等
-    return render_template('match.html', match=match_data)
+    max_season = get_max_season("./data/match")
+    return render_template('match.html', match=match_data, max_season=max_season)
 
 # API端点，用于前端加载比赛数据
 @app.route('/api/match/<season_id>')

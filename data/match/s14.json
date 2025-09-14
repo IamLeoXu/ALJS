@@ -1,52 +1,1645 @@
 {
-    "teams": [
-        {
-            "team_id": "TeamA",
-            "rank": 1,
-            "total_score": 20,
-            "total_kills": 8,
-            "rank_score": 12,
-            "players": [
-                {"player_id": "PlayerX1", "kills": 3, "damage": 1200},
-                {"player_id": "PlayerX2", "kills": 2, "damage": 800},
-                {"player_id": "PlayerX3", "kills": 3, "damage": 1000}
-            ]
+  "num_matches": 4,
+  "teams": [
+    {
+      "team_id": "队伍 1",
+      "total": {
+        "points": 12,
+        "placement": 16,
+        "kills": 6
+      },
+      "matches": {
+        "match1": {
+          "points": 0,
+          "placement": 16,
+          "kills": 0
         },
-        {
-            "team_id": "TeamB",
-            "rank": 2,
-            "total_score": 15,
-            "total_kills": 6,
-            "rank_score": 9,
-            "players": [
-                {"player_id": "PlayerY1", "kills": 2, "damage": 900, "assists": 9},
-                {"player_id": "PlayerY2", "kills": 1, "damage": 600},
-                {"player_id": "PlayerY3", "kills": 3, "damage": 1100}
-            ]
+        "match2": {
+          "points": 10,
+          "placement": 4,
+          "kills": 5
         },
-        {
-            "team_id": "TeamSB",
-            "rank": 14,
-            "total_score": 15,
-            "total_kills": 6,
-            "rank_score": 9,
-            "players": [
-                {"player_id": "PlayerY1", "kills": 2, "damage": 900},
-                {"player_id": "PlayerY2", "kills": 1, "damage": 600},
-                {"player_id": "PlayerY3", "kills": 3, "damage": 1100}
-            ]
+        "match3": {
+          "points": 1,
+          "placement": 18,
+          "kills": 1
         },
-        {
-            "team_id": "TeamC",
-            "rank": 3,
-            "total_score": 7,
-            "total_kills": 5,
-            "rank_score": 2,
-            "players": [
-                {"player_id": "PlayerZ1", "kills": 2, "damage": 700},
-                {"player_id": "PlayerZ2", "kills": 2, "damage": 650},
-                {"player_id": "PlayerZ3", "kills": 1, "damage": 500}
-            ]
+        "match4": {
+          "points": 1,
+          "placement": 12,
+          "kills": 0
         }
-    ]
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "队伍 2",
+      "total": {
+        "points": 37,
+        "placement": 5,
+        "kills": 21
+      },
+      "matches": {
+        "match1": {
+          "points": 0,
+          "placement": 19,
+          "kills": 0
+        },
+        "match2": {
+          "points": 25,
+          "placement": 1,
+          "kills": 13
+        },
+        "match3": {
+          "points": 7,
+          "placement": 6,
+          "kills": 4
+        },
+        "match4": {
+          "points": 5,
+          "placement": 13,
+          "kills": 4
+        }
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "队伍 3",
+      "total": {
+        "points": 20,
+        "placement": 9,
+        "kills": 15
+      },
+      "matches": {
+        "match1": {
+          "points": 5,
+          "placement": 13,
+          "kills": 4
+        },
+        "match2": {
+          "points": 0,
+          "placement": 19,
+          "kills": 0
+        },
+        "match3": {
+          "points": 13,
+          "placement": 8,
+          "kills": 11
+        },
+        "match4": {
+          "points": 2,
+          "placement": 8,
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "队伍 4",
+      "total": {
+        "points": 34,
+        "placement": 6,
+        "kills": 17
+      },
+      "matches": {
+        "match1": {
+          "points": 8,
+          "placement": 6,
+          "kills": 5
+        },
+        "match2": {
+          "points": 5,
+          "placement": 8,
+          "kills": 3
+        },
+        "match3": {
+          "points": 11,
+          "placement": 4,
+          "kills": 6
+        },
+        "match4": {
+          "points": 10,
+          "placement": 3,
+          "kills": 3
+        }
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "队伍 5",
+      "total": {
+        "points": 50,
+        "placement": 2,
+        "kills": 30
+      },
+      "matches": {
+        "match1": {
+          "points": 29,
+          "placement": 1,
+          "kills": 17
+        },
+        "match2": {
+          "points": 16,
+          "placement": 3,
+          "kills": 9
+        },
+        "match3": {
+          "points": 1,
+          "placement": 11,
+          "kills": 0
+        },
+        "match4": {
+          "points": 4,
+          "placement": 16,
+          "kills": 4
+        }
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "队伍 6",
+      "total": {
+        "points": 13,
+        "placement": 12,
+        "kills": 6
+      },
+      "matches": {
+        "match1": {
+          "points": 1,
+          "placement": 11,
+          "kills": 0
+        },
+        "match2": {
+          "points": 7,
+          "placement": 5,
+          "kills": 3
+        },
+        "match3": {
+          "points": 1,
+          "placement": 15,
+          "kills": 0
+        },
+        "match4": {
+          "points": 4,
+          "placement": 14,
+          "kills": 3
+        }
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "队伍 7",
+      "total": {
+        "points": 22,
+        "placement": 8,
+        "kills": 17
+      },
+      "matches": {
+        "match1": {
+          "points": 7,
+          "placement": 12,
+          "kills": 6
+        },
+        "match2": {
+          "points": 1,
+          "placement": 13,
+          "kills": 0
+        },
+        "match3": {
+          "points": 4,
+          "placement": 16,
+          "kills": 4
+        },
+        "match4": {
+          "points": 10,
+          "placement": 7,
+          "kills": 7
+        }
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "队伍 8",
+      "total": {
+        "points": 7,
+        "placement": 18,
+        "kills": 1
+      },
+      "matches": {
+        "match1": {
+          "points": 0,
+          "placement": 17,
+          "kills": 0
+        },
+        "match2": {
+          "points": 3,
+          "placement": 10,
+          "kills": 1
+        },
+        "match3": {
+          "points": 3,
+          "placement": 7,
+          "kills": 0
+        },
+        "match4": {
+          "points": 1,
+          "placement": 15,
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "队伍 9",
+      "total": {
+        "points": 13,
+        "placement": 12,
+        "kills": 2
+      },
+      "matches": {
+        "match1": {
+          "points": 9,
+          "placement": 3,
+          "kills": 2
+        },
+        "match2": {
+          "points": 1,
+          "placement": 14,
+          "kills": 0
+        },
+        "match3": {
+          "points": 1,
+          "placement": 13,
+          "kills": 0
+        },
+        "match4": {
+          "points": 2,
+          "placement": 10,
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "队伍 10",
+      "total": {
+        "points": 13,
+        "placement": 12,
+        "kills": 3
+      },
+      "matches": {
+        "match1": {
+          "points": 6,
+          "placement": 4,
+          "kills": 1
+        },
+        "match2": {
+          "points": 0,
+          "placement": 17,
+          "kills": 0
+        },
+        "match3": {
+          "points": 1,
+          "placement": 14,
+          "kills": 0
+        },
+        "match4": {
+          "points": 6,
+          "placement": 5,
+          "kills": 2
+        }
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "队伍 11",
+      "total": {
+        "points": 13,
+        "placement": 12,
+        "kills": 8
+      },
+      "matches": {
+        "match1": {
+          "points": 4,
+          "placement": 14,
+          "kills": 3
+        },
+        "match2": {
+          "points": 3,
+          "placement": 12,
+          "kills": 2
+        },
+        "match3": {
+          "points": 0,
+          "placement": 17,
+          "kills": 0
+        },
+        "match4": {
+          "points": 6,
+          "placement": 6,
+          "kills": 3
+        }
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "队伍 12",
+      "total": {
+        "points": 16,
+        "placement": 11,
+        "kills": 6
+      },
+      "matches": {
+        "match1": {
+          "points": 3,
+          "placement": 7,
+          "kills": 0
+        },
+        "match2": {
+          "points": 0,
+          "placement": 18,
+          "kills": 0
+        },
+        "match3": {
+          "points": 13,
+          "placement": 3,
+          "kills": 6
+        },
+        "match4": {
+          "points": 0,
+          "placement": 17,
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "队伍 13",
+      "total": {
+        "points": 20,
+        "placement": 9,
+        "kills": 14
+      },
+      "matches": {
+        "match1": {
+          "points": 2,
+          "placement": 15,
+          "kills": 1
+        },
+        "match2": {
+          "points": 2,
+          "placement": 15,
+          "kills": 1
+        },
+        "match3": {
+          "points": 2,
+          "placement": 9,
+          "kills": 0
+        },
+        "match4": {
+          "points": 14,
+          "placement": 9,
+          "kills": 12
+        }
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "队伍 14",
+      "total": {
+        "points": 43,
+        "placement": 4,
+        "kills": 18
+      },
+      "matches": {
+        "match1": {
+          "points": 3,
+          "placement": 8,
+          "kills": 1
+        },
+        "match2": {
+          "points": 13,
+          "placement": 2,
+          "kills": 4
+        },
+        "match3": {
+          "points": 17,
+          "placement": 2,
+          "kills": 8
+        },
+        "match4": {
+          "points": 10,
+          "placement": 4,
+          "kills": 5
+        }
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "队伍 15",
+      "total": {
+        "points": 9,
+        "placement": 17,
+        "kills": 2
+      },
+      "matches": {
+        "match1": {
+          "points": 6,
+          "placement": 5,
+          "kills": 2
+        },
+        "match2": {
+          "points": 1,
+          "placement": 11,
+          "kills": 0
+        },
+        "match3": {
+          "points": 2,
+          "placement": 10,
+          "kills": 0
+        },
+        "match4": {
+          "points": 0,
+          "placement": 18,
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "队伍 16",
+      "total": {
+        "points": 4,
+        "placement": 19,
+        "kills": 2
+      },
+      "matches": {
+        "match1": {
+          "points": 0,
+          "placement": 18,
+          "kills": 0
+        },
+        "match2": {
+          "points": 4,
+          "placement": 9,
+          "kills": 2
+        },
+        "match3": {
+          "points": 0,
+          "placement": 19,
+          "kills": 0
+        },
+        "match4": {
+          "points": 0,
+          "placement": 19,
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "队伍 17",
+      "total": {
+        "points": 55,
+        "placement": 1,
+        "kills": 37
+      },
+      "matches": {
+        "match1": {
+          "points": 8,
+          "placement": 10,
+          "kills": 6
+        },
+        "match2": {
+          "points": 20,
+          "placement": 6,
+          "kills": 17
+        },
+        "match3": {
+          "points": 26,
+          "placement": 1,
+          "kills": 14
+        },
+        "match4": {
+          "points": 1,
+          "placement": 11,
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "队伍 18",
+      "total": {
+        "points": 33,
+        "placement": 7,
+        "kills": 18
+      },
+      "matches": {
+        "match1": {
+          "points": 11,
+          "placement": 9,
+          "kills": 9
+        },
+        "match2": {
+          "points": 0,
+          "placement": 16,
+          "kills": 0
+        },
+        "match3": {
+          "points": 4,
+          "placement": 12,
+          "kills": 3
+        },
+        "match4": {
+          "points": 18,
+          "placement": 1,
+          "kills": 6
+        }
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "队伍 19",
+      "total": {
+        "points": 44,
+        "placement": 3,
+        "kills": 19
+      },
+      "matches": {
+        "match1": {
+          "points": 10,
+          "placement": 2,
+          "kills": 1
+        },
+        "match2": {
+          "points": 3,
+          "placement": 7,
+          "kills": 0
+        },
+        "match3": {
+          "points": 12,
+          "placement": 5,
+          "kills": 8
+        },
+        "match4": {
+          "points": 19,
+          "placement": 2,
+          "kills": 10
+        }
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "team_id": "队伍 20",
+      "total": {
+        "points": 0,
+        "placement": 20,
+        "kills": 0
+      },
+      "matches": {
+        "match1": {
+          "points": 0,
+          "placement": 0,
+          "kills": 0
+        },
+        "match2": {
+          "points": 0,
+          "placement": 0,
+          "kills": 0
+        },
+        "match3": {
+          "points": 0,
+          "placement": 0,
+          "kills": 0
+        },
+        "match4": {
+          "points": 0,
+          "placement": 0,
+          "kills": 0
+        }
+      },
+      "players": [
+        {
+          "player_id": "/",
+          "total": {
+            "kills": "/",
+            "damage": "/",
+            "assists": "/",
+            "knockdowns": "/",
+            "revives": "/",
+            "respawns": "/",
+            "avg_survival": "/"
+          },
+          "matches": {
+            "match1": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match2": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match3": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            },
+            "match4": {
+              "kills": "/",
+              "damage": "/",
+              "assists": "/",
+              "knockdowns": "/",
+              "revives": "/",
+              "respawns": "/",
+              "avg_survival": "/"
+            }
+          }
+        }
+      ]
+    }
+  ]
 }
