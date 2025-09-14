@@ -2,11 +2,10 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.8, user-scalable=no">
   <title>ALJS 比赛详情 - 果汁百科</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    /* 你的现有 CSS 样式 */
     body {
       background-color: #0d0d0d;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,8 +20,6 @@
       z-index: 1000;
       border: none;
     }
-
-    /* 赛季选择条 */
     .season-tabs {
       background-color: #111;
       padding: 0px 0;
@@ -66,8 +63,6 @@
       background-color: #533794;
       color: #fff;
     }
-
-    /* 比赛 tabs：使用 CSS Grid 自适应列数 */
     .match-tabs {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -84,7 +79,7 @@
       text-transform: uppercase;
       text-align: center;
       box-sizing: border-box;
-      min-width: 150px; /* 确保最小宽度一致 */
+      min-width: 150px;
     }
     .match-tab:hover {
       background-color: #333;
@@ -94,8 +89,6 @@
       background-color: #533794;
       color: #fff;
     }
-
-    /* 队伍卡片 */
     .team-card {
       background: #161616;
       border: 1px solid #333;
@@ -164,8 +157,6 @@
       font-size: 0.8rem;
       color: #888;
     }
-
-    /* 子表格 */
     .player-table-wrapper {
       margin-top: 10px;
       overflow: hidden;
@@ -177,8 +168,24 @@
       max-height: 1000px;
       opacity: 1;
     }
+    .player-table-container {
+      overflow-x: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #333 #222;
+    }
+    .player-table-container::-webkit-scrollbar {
+      height: 8px;
+    }
+    .player-table-container::-webkit-scrollbar-track {
+      background: #222;
+    }
+    .player-table-container::-webkit-scrollbar-thumb {
+      background: #333;
+      border-radius: 4px;
+    }
     .player-table {
       width: 100%;
+      min-width: 800px; /* Ensure table is wide enough to need scrolling */
       border-collapse: collapse;
       margin-top: 10px;
       background: #111;
@@ -188,6 +195,7 @@
       border-bottom: 1px solid #333;
       text-align: center;
       color: #ccc;
+      white-space: nowrap; /* Prevent text wrapping */
     }
     .player-table th {
       background: #222;
@@ -195,7 +203,6 @@
       color: #fff;
       text-transform: uppercase;
     }
-
     .brand-container {
       text-align: center;
       display: flex;
@@ -212,55 +219,28 @@
       color: #BBB;
       margin-top: -5px;
     }
-    /* 您的现有CSS */
-
-/* 针对手机屏幕（宽度小于768px时）进行调整 */
-/*    @media only screen and (max-width: 768px) {*/
-/*        body {*/
-/*            zoom: 1; !* 强制整体缩放，如果需要 *!*/
-/*            font-size: 16px; !* 调整字体大小，避免手机默认放大 *!*/
-/*        }*/
-
-/*        !* 假设您的图标类名为.icon（替换为实际类名） *!*/
-/*        .icon {*/
-/*            width: auto; !* 改为自动宽度，防止错位 *!*/
-/*            height: auto;*/
-/*            position: relative; !* 如果原来是absolute，改为relative以适配 *!*/
-/*        }*/
-
-/*        !* 如果页面有容器元素，如.main-container *!*/
-/*        .main-container {*/
-/*            width: 100%; !* 占满屏幕宽度 *!*/
-/*            max-width: none; !* 移除最大宽度限制 *!*/
-/*            margin: 0 auto; !* 居中 *!*/
-/*        }*/
-/*    }*/
   </style>
-  <!-- 您的其他<head>内容 -->
-  <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.8, user-scalable=no">
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <img src="/static/images/logo.png" alt="ALJS Logo" height="80" class="me-2">
-            <div class="brand-container">
-                <a class="navbar-brand" href="/">果汁百科</a>
-                <a class="navbar-brand" href="/">Juicypedia</a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/events">赛事纪录</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <img src="/static/images/logo.png" alt="ALJS Logo" height="80" class="me-2">
+      <div class="brand-container">
+        <a class="navbar-brand" href="/">果汁百科</a>
+        <a class="navbar-brand" href="/">Juicypedia</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/events">赛事纪录</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <div class="container my-4">
-    <!-- 赛季选择 -->
     <div class="season-tabs">
       <div class="d-flex flex-nowrap mb-3" id="season-tabs-scroll">
         {% set season_num = match.match_id | lower | replace('s', '') | int %}
@@ -273,14 +253,10 @@
       </div>
     </div>
     <br>
-    <!-- 标题 -->
     <h1 class="mb-3">ALJS 比赛详情 - 赛季 S{{ season_num }}</h1>
-    <!-- Match tabs -->
     <div class="match-tabs" id="match-tabs-container">
       <button class="match-tab active" data-tab="total">Group Standings</button>
     </div>
-
-    <!-- 队伍内容 -->
     <div id="teams-container"></div>
   </div>
 
@@ -294,7 +270,6 @@
       const tabContainer = $('#match-tabs-container');
       const scrollContainer = $('#season-tabs-scroll');
 
-      // 赛季标签滚动到当前赛季
       const season_num = {{ season_num }};
       const $activeTab = scrollContainer.find('.season-tab.active');
       if ($activeTab.length) {
@@ -303,13 +278,11 @@
         scrollContainer.parent().scrollLeft(scrollLeft);
       }
 
-      // 创建比赛选项卡
       for (let m = 1; m <= data.num_matches; m++) {
         const btn = $(`<button class="match-tab" data-tab="match${m}">Match ${m} Complete</button>`);
         tabContainer.append(btn);
       }
 
-      // 选项卡切换事件
       $(document).on('click', '.match-tab', function() {
         $('.match-tab').removeClass('active');
         $(this).addClass('active');
@@ -317,7 +290,6 @@
         renderTeams(tab);
       });
 
-      // 渲染队伍函数
       function renderTeams(tab) {
         container.empty();
         const sortedTeams = [...data.teams].sort((a, b) => {
@@ -328,7 +300,6 @@
         sortedTeams.forEach((team, index) => {
           const teamData = tab === 'total' ? team.total : team.matches[tab];
           const placementLabel = tab === 'total' ? 'Best Placement' : 'Placement';
-          // Calculate best placement for total tab
           const placementValue = tab === 'total' ?
             Math.min(...Object.values(team.matches).map(m => m.placement)) :
             teamData.placement;
@@ -364,42 +335,43 @@
                 </div>
               </div>
               <div class="player-table-wrapper">
-                <table class="player-table">
-                  <thead>
-                    <tr>
-                      <th>Player</th>
-                      <th>Kills</th>
-                      <th>Damage</th>
-                      <th>Assists</th>
-                      <th>Knockdowns</th>
-                      <th>Revives</th>
-                      <th>Respawns</th>
-                      <th>Avg Survival</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    ${team.players.map(p => {
-                      const pData = tab === 'total' ? p.total : p.matches[tab];
-                      return `
-                        <tr>
-                          <td>${p.player_id}</td>
-                          <td>${pData.kills}</td>
-                          <td>${pData.damage}</td>
-                          <td>${pData.assists || 0}</td>
-                          <td>${pData.knockdowns || 0}</td>
-                          <td>${pData.revives || 0}</td>
-                          <td>${pData.respawns || 0}</td>
-                          <td>${pData.avg_survival || "0:00"}</td>
-                        </tr>
-                      `;
-                    }).join('')}
-                  </tbody>
-                </table>
+                <div class="player-table-container">
+                  <table class="player-table">
+                    <thead>
+                      <tr>
+                        <th>Player</th>
+                        <th>Kills</th>
+                        <th>Damage</th>
+                        <th>Assists</th>
+                        <th>Knockdowns</th>
+                        <th>Revives</th>
+                        <th>Respawns</th>
+                        <th>Avg Survival</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      ${team.players.map(p => {
+                        const pData = tab === 'total' ? p.total : p.matches[tab];
+                        return `
+                          <tr>
+                            <td>${p.player_id}</td>
+                            <td>${pData.kills}</td>
+                            <td>${pData.damage}</td>
+                            <td>${pData.assists || 0}</td>
+                            <td>${pData.knockdowns || 0}</td>
+                            <td>${pData.revives || 0}</td>
+                            <td>${pData.respawns || 0}</td>
+                            <td>${pData.avg_survival || "0:00"}</td>
+                          </tr>
+                        `;
+                      }).join('')}
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           `);
 
-          // 点击展开/收起
           card.find('.team-header').on('click', function() {
             card.find('.player-table-wrapper').toggleClass('show');
           });
@@ -408,7 +380,6 @@
         });
       }
 
-      // 初始渲染总分
       renderTeams('total');
     });
   </script>

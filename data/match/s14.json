@@ -760,7 +760,7 @@
       },
       "players": [
         {
-          "player_id": "Fish",
+          "player_id": "声なき魚",
           "total": {
             "kills": "/",
             "damage": "/",
@@ -810,7 +810,7 @@
           }
         },
         {
-          "player_id": "shiromi",
+          "player_id": "Shiromi",
           "total": {
             "kills": "/",
             "damage": "/",
@@ -860,7 +860,7 @@
           }
         },
         {
-          "player_id": "senneri",
+          "player_id": "Sennori",
           "total": {
             "kills": "/",
             "damage": "/",
