@@ -46,7 +46,6 @@
     .season-tab {
       background-color: #1c1c1c;
       color: #aaa;
-      font-weight: bold;
       padding: 12px 40px;
       margin-right: 10px;
       margin-top: 10px;
@@ -56,6 +55,9 @@
       border: none;
       white-space: nowrap;
       min-width: 120px;
+      font-family: 'Eurostile LT', sans-serif;
+      font-weight: normal ;
+      /*transform: scaleX(2); !* 拉宽字体，1.2 表示横向拉伸 20% *!*/
     }
     .season-tab:hover {
       background-color: #333;
@@ -74,7 +76,6 @@
     .match-tab {
       background-color: #1c1c1c;
       color: #aaa;
-      font-weight: bold;
       padding: 14px 24px;
       border: none;
       border-radius: 0;
@@ -82,6 +83,8 @@
       text-align: center;
       box-sizing: border-box;
       min-width: 150px;
+      font-family: 'Eurostile LT', sans-serif;
+      font-weight: normal ;
     }
     .match-tab:hover {
       background-color: #333;
@@ -123,14 +126,21 @@
       align-items: center;
       justify-content: center;
       font-weight: bold;
-      font-size: 0.9rem;
+      font-style: inherit;
+      font-size: 1.3rem;
       color: #fff;
+      font-family: 'Duke-Fill', sans-serif;
+      font-weight: bolder ;
     }
     .team-name {
-      font-size: 1rem;
+      font-size: 2rem;
       font-weight: bold;
       color: #fff;
       text-transform: uppercase;
+      margin-left: 10px;
+      font-family: 'Duke-Fill', sans-serif;
+      font-weight: bolder ;
+      transform: scaleX(1.2); /* 拉宽字体，1.2 表示横向拉伸 20% */
     }
     .team-stats {
       display: flex;
@@ -160,7 +170,7 @@
       color: #888;
     }
     .player-table-wrapper {
-      margin-top: 10px;
+      margin-top: 0px;
       overflow: hidden;
       max-height: 0;
       opacity: 0;
@@ -215,11 +225,44 @@
       font-size: 2rem;
       font-weight: bold;
       line-height: 1.2;
+      font-family: 'Eurostile LT', sans-serif;
     }
     .brand-container .navbar-brand:last-child {
       font-size: 1rem;
       color: #BBB;
       margin-top: -5px;
+      font-family: 'Eurostile LT', sans-serif;
+    }
+    @font-face {
+      font-family: 'Duke-Fill';
+      font-style: normal;
+      font-weight: bold;
+      src: local('Duke-Fill'), local('Duke Fill'), url('https://cdn.battlefy.com/algs/fonts/Duke-Regular.otf') format('opentype');
+    }
+    @font-face {
+      font-family: 'Eurostile LT';
+      font-style: normal;
+      font-weight: bold;
+      src: url('https://cdn.battlefy.com/algs/fonts/EurostileLT-Bold.woff2') format('woff2'),
+           url('https://cdn.battlefy.com/algs/fonts/EurostileLT-Bold.woff') format('woff');
+  }
+    @font-face {
+      font-family: 'Eurostile LT';
+      font-style: normal;
+      font-weight: normal;
+      src: url('https://cdn.battlefy.com/algs/fonts/EurostileLT.woff2') format('woff2'),
+           url('https://cdn.battlefy.com/algs/fonts/EurostileLT.woff') format('woff');
+    }
+
+    h1.mb-3 {
+      font-family: 'Duke-Fill', sans-serif;
+      font-weight: bolder ;
+      font-size: 4rem;
+    }
+
+    .nav-item .nav-link {
+      font-family: 'Eurostile LT', sans-serif;
+      /*font-weight: bold;*/
     }
   </style>
 </head>
@@ -230,13 +273,17 @@
       <div class="brand-container">
         <a class="navbar-brand" href="/">果汁百科</a>
         <a class="navbar-brand" href="/">Juicypedia</a>
+<!--        <a class="navbar-brand" href="/">Apex Legends Juicy Series</a>-->
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="/events">赛事纪录</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="/events">赛事记录</a>
+<!--            <a class="nav-link" href="/events">MATCH RECORDS</a>-->
+          </li>
         </ul>
       </div>
     </div>
@@ -255,7 +302,7 @@
       </div>
     </div>
     <br>
-    <h1 class="mb-3">ALJS 比赛详情 - 赛季 S{{ season_num }}</h1>
+    <h1 class="mb-3">ALJS TOURNAMENT - SEASON{{ season_num }}</h1>
     <div class="match-tabs" id="match-tabs-container">
       <button class="match-tab active" data-tab="total">Group Standings</button>
     </div>
