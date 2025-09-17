@@ -16,6 +16,7 @@
             min-height: 100vh;
             position: relative;
             padding-bottom: 400px; /* Space for intro and QR codes */
+            transition: padding-top 0.3s ease; /* 平滑调整 */
         }
 
         /* 导航栏 */
@@ -36,6 +37,7 @@
             height: 100vh;
             overflow: hidden;
             margin-top: 100px; /* Small gap between navbar and video */
+            transition: margin-top 0.3s ease; /* 平滑调整 */
         }
         .video-bg video {
             position: absolute;
@@ -185,9 +187,21 @@
             margin-top: 10px;
             font-size: 0.9rem;
         }
+
+        /* 媒体查询：针对竖屏/小屏幕优化 navbar 展开时的推移 */
+        @media (max-width: 991px) { /* Bootstrap lg 断点前，navbar 折叠 */
+            body.navbar-expanded {
+                padding-top: 5px; /* 展开时 navbar 高度估算（56px collapsed + 菜单高度），可根据实际调整 */
+            }
+            .video-bg.navbar-expanded {
+                margin-top: 140px; /* 100px 原 gap + 额外 256px 推移 */
+            }
+            /* 确保 fixed 元素如 hero-content 在展开时不被 navbar 菜单覆盖 */
+            .hero-content {
+                z-index: 1001; /* 高于 navbar 的 1000 */
+            }
+        }
     </style>
-    <!-- 您的其他<head>内容 -->
-    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.8, user-scalable=no">
 </head>
 <body>
     <!-- 导航栏 -->
@@ -258,6 +272,9 @@
         const qrSection = document.getElementById("qrSection");
         const introSection = document.getElementById("introSection");
         const heroContent = document.getElementById("heroContent");
+        const navbarCollapse = document.getElementById('navbarNav'); // navbar collapse 元素
+        const body = document.body;
+        const videoBg = document.querySelector('.video-bg');
 
         // Mute button functionality
         muteBtn.addEventListener("click", () => {
@@ -286,6 +303,19 @@
                 introSection.classList.remove("shifted");
                 heroContent.classList.remove("shifted");
             }
+        });
+
+        // 新增：监听 navbar collapse 事件，动态调整视频位置（针对竖屏）
+        const collapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+        navbarCollapse.addEventListener('show.bs.collapse', function () {
+            // 展开时推移
+            body.classList.add('navbar-expanded');
+            videoBg.classList.add('navbar-expanded');
+        });
+        navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+            // 折叠时恢复
+            body.classList.remove('navbar-expanded');
+            videoBg.classList.remove('navbar-expanded');
         });
     </script>
 </body>
