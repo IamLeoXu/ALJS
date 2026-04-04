@@ -2552,29 +2552,29 @@
     {
       "team_id": "JDK7",
       "total": {
-        "points": 71,
-        "placement": 1,
-        "kills": 44
+        "points": 0,
+        "placement": 0,
+        "kills": 0
       },
       "matches": {
         "match1": {
-          "points": 31,
-          "placement": 1,
-          "kills": 19
+          "points": 0,
+          "placement": 0,
+          "kills": 0
         },
         "match2": {
-          "points": 26,
-          "placement": 1,
-          "kills": 14
+          "points": 0,
+          "placement": 0,
+          "kills": 0
         },
         "match3": {
-          "points": 14,
-          "placement": 6,
-          "kills": 11
+          "points": 0,
+          "placement": 0,
+          "kills": 0
         },
         "match4": {
           "points": 0,
-          "placement": 16,
+          "placement": 0,
           "kills": 0
         }
       },
